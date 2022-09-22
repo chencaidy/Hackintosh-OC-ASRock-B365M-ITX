@@ -3,15 +3,15 @@
 ## 平台配置
 
 * 主板：ASRock B365M-ITX/ac
-* CPU：Intel Xeon E-2186M (Coffee Lake)
-* iGPU：Intel UHD Graphics P630
+* CPU：Intel Core i7-8700B (Coffee Lake)
+* iGPU：Intel UHD Graphics 630
 * dGPU：AMD Radeon RX580 8GB
 * 网卡：Apple BCM94360CS2
 * 内存：32GB DDR4 2666MHz
 
 ## 特性
 
-* 仿冒机型：Macmini8,1（SN已去除，需自行补充）
+* 仿冒机型：MacPro7,1（SN已去除，需自行补充）
 * 系统版本：Monterey 12.6
 * 核显编解码加速正常，显卡FB：3E9B0000，VRAM：1536MB
 * 独显输出正常，最高支持4屏输出（3DP+1HDMI）
@@ -32,10 +32,17 @@
 ## BIOS配置（版本：P4.30）
 
 * 恢复出厂设置：`Exit`->`Load UEFI Defaults`
-* 开启核显：`Advanced`->`Chipset Configuration`->`IGPU Multi-Monitor`->`Enabled`
 * 启用Handoff：`Advanced`->`USB Configuration`->`XHCI Hand-off`->`Enabled`
+* 关闭CSM：`Boot`->`CSM (Compatibility Support Module)`->`CSM`->`Disabled`
 
 ## 更新日志
+
+### 2022-09-22
+
+* 更新OpenCore 0.8.4
+* 更新AppleALC 1.7.5
+* 更换机型为MacPro7,1
+* 更新BIOS配置，默认禁用iGPU
 
 ### 2022-09-17
 
