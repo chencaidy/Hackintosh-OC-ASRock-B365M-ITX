@@ -13,7 +13,6 @@
 
 * 仿冒机型：MacPro7,1（SN已去除，需自行补充）
 * 系统版本：Monterey 12.6
-* 核显编解码加速正常，显卡FB：3E9B0000，VRAM：1536MB
 * 独显输出正常，最高支持4屏输出（3DP+1HDMI）
 * 扬声器、麦克风输出正常，声卡ID：5
 * WiFi正常，免驱
@@ -29,6 +28,16 @@
 
 * 无
 
+## 初次安装注意
+
+第一次安装macOS或者硬盘抹掉后，会在苹果LOGO后无限重启（Verbose模式下第一屏代码跑完后立即重启）,因为此OC默认启用SecureBoot机制
+
+解决方法如下：
+
+1. 编辑config.plist，将`SecureBootModel`修改为`Disabled`
+2. 正常安装macOS
+3. 安装完成后，将`SecureBootModel`改回`j160`
+
 ## BIOS配置（版本：P4.30）
 
 * 恢复出厂设置：`Exit`->`Load UEFI Defaults`
@@ -43,6 +52,7 @@
 * 更新AppleALC 1.7.5
 * 更换机型为MacPro7,1
 * 更新BIOS配置，默认禁用iGPU
+* 修复MacPro内存映射
 
 ### 2022-09-17
 
