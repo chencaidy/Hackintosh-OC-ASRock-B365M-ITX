@@ -4,7 +4,6 @@
 
 * 主板：ASRock B365M-ITX/ac
 * CPU：Intel Core i7-8700B (Coffee Lake)
-* iGPU：Intel UHD Graphics 630
 * dGPU：AMD Radeon RX580 8GB
 * 网卡：Apple BCM94360CS2
 * 内存：32GB DDR4 2666MHz
@@ -30,7 +29,7 @@
 
 ## 初次安装注意
 
-第一次安装macOS或者硬盘抹掉后，会在苹果LOGO后无限重启（Verbose模式下第一屏代码跑完后立即重启）,因为此OC默认启用SecureBoot机制
+第一次安装macOS或者硬盘抹掉后，会在苹果LOGO后无限重启（Verbose模式下第一屏代码跑完后立即重启），因为此OC默认启用SecureBoot机制
 
 解决方法如下：
 
