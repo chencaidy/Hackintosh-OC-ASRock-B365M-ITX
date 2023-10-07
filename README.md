@@ -11,7 +11,7 @@
 ## 特性
 
 * 仿冒机型：MacPro7,1（SN已去除，需自行补充）
-* 系统版本：Monterey 12.6
+* 系统版本：Ventura 13.2.1
 * 独显输出正常，最高支持4屏输出（3DP+1HDMI）
 * 扬声器、麦克风输出正常，声卡ID：5
 * WiFi正常，免驱
@@ -44,6 +44,13 @@
 * 关闭CSM：`Boot`->`CSM (Compatibility Support Module)`->`CSM`->`Disabled`
 
 ## 更新日志
+
+### 2023-02-26
+
+* 更新OpenCore 0.8.9
+* 更新AppleALC 1.7.9
+* 更新Lilu 1.6.3
+* 更新WhateverGreen 1.6.4
 
 ### 2022-11-23
 
