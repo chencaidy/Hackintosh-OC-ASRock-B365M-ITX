@@ -11,7 +11,7 @@
 ## 特性
 
 * 仿冒机型：MacPro7,1（SN已去除，需自行补充）
-* 系统版本：Ventura 13.2.1
+* 系统版本：Sonoma 14.1.1
 * 独显输出正常，最高支持4屏输出（3DP+1HDMI）
 * 扬声器、麦克风输出正常，声卡ID：5
 * WiFi正常，免驱
@@ -25,17 +25,7 @@
 
 ## 已知问题
 
-* 无
-
-## 初次安装注意
-
-第一次安装macOS或者硬盘抹掉后，会在苹果LOGO后无限重启（Verbose模式下第一屏代码跑完后立即重启），因为此OC默认启用SecureBoot机制
-
-解决方法如下：
-
-1. 编辑config.plist，将`SecureBootModel`修改为`Disabled`
-2. 正常安装macOS
-3. 安装完成后，将`SecureBootModel`改回`j160`
+* 需要使用OCLP进行无线网卡修补
 
 ## BIOS配置（版本：P4.30）
 
@@ -44,6 +34,21 @@
 * 关闭CSM：`Boot`->`CSM (Compatibility Support Module)`->`CSM`->`Disabled`
 
 ## 更新日志
+
+### 2023-11-10
+
+* 更新OpenCore 0.9.6
+* 更新AppleALC 1.8.7
+* 更新Lilu 1.6.7
+* 更新NVMeFix 1.1.1
+* 更新RestrictEvents 1.1.3
+* 更新VirtualSMC 1.3.2
+* 更新WhateverGreen 1.6.6
+* 增加IO80211FamilyLegacy，用于支持Wi-Fi网络
+* 增加IOSkywalkFamily，用于支持Wi-Fi网络
+* 增加AMFIPass，绕过系统完整性检查
+* 禁用SecureBootModel和SIP，用于OCLP打补丁
+* 增加ResetNvramEntry选项，用于重置SMC
 
 ### 2023-02-26
 
