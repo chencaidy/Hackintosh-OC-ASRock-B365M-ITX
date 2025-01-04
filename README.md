@@ -11,10 +11,10 @@
 ## 特性
 
 * 仿冒机型：MacPro7,1（SN已去除，需自行补充）
-* 系统版本：Sonoma 14.1.1
+* 系统版本：Sequoia 15.2
 * 独显输出正常，最高支持4屏输出（3DP+1HDMI）
 * 扬声器、麦克风输出正常，声卡ID：5
-* WiFi正常，免驱
+* WiFi正常，需要OCLP修补
 * 蓝牙正常，支持接力，支持随航
 * 睡眠正常，支持电能小憩
 * USB端口正常，端口属性正确修正
@@ -34,6 +34,21 @@
 * 关闭CSM：`Boot`->`CSM (Compatibility Support Module)`->`CSM`->`Disabled`
 
 ## 更新日志
+
+### 2024-12-30
+
+* 更新OpenCore 1.0.3
+* 更新AMFIPass 1.4.1
+* 更新AppleALC 1.9.3
+* 更新IntelMausi 1.0.8
+* 更新IOSkywalkFamily 1.2.0
+* 更新Lilu 1.7.0
+* 更新NVMeFix 1.1.2
+* 更新RestrictEvents 1.1.5
+* 更新VirtualSMC 1.3.4
+* 更新WhateverGreen 1.6.9
+* 增加SMCRadeonSensors
+* 开启WoL
 
 ### 2023-11-10
 
